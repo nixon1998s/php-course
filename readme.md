@@ -22,3 +22,7 @@
 # -Aula 307 - Concateção.
 - Para fazer uma concatenação no PHP deve-se utilizar o '.', (exemplo .$nome).
 -[OBS01]: É possível também fazer a concateção utilizando aspas duplas, por exemplo ("Olá $nome, como vai?").
+
+# -Aula 308 - Variáveis constantes
+- Antes de criar uma variável constante em PHP é necessário chamar a função define(), a função irá definir a variável para constante e espera que passe 2 valores, sendo o primeiro valor o nome da variável e em segundo o seu valor, exemplo(define('nome','Nixon')).
+-[OBS01]: Para declarar uma variável constante se adota a pratica de escrever o nome das variáveis em maiúsculos, exemplo(define('COR', 'Azul')).[OBS02]: Ao chamar a variável criada não é necessário utilizar o $, (exemplo: echo COR;)

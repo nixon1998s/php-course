@@ -12,6 +12,10 @@
             $nome = 'Nixon';
             
             echo 'Olá '.$nome.', tudo bem?';
+
+            define('IDADE', 28);
+
+            echo '<br/>' .IDADE;
         ?>
 
 

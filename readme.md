@@ -26,3 +26,15 @@
 # -Aula 308 - Variáveis constantes
 - Antes de criar uma variável constante em PHP é necessário chamar a função define(), a função irá definir a variável para constante e espera que passe 2 valores, sendo o primeiro valor o nome da variável e em segundo o seu valor, exemplo(define('nome','Nixon')).
 -[OBS01]: Para declarar uma variável constante se adota a pratica de escrever o nome das variáveis em maiúsculos, exemplo(define('COR', 'Azul')).[OBS02]: Ao chamar a variável criada não é necessário utilizar o $, (exemplo: echo COR;)
+
+# -Aula 310 - Operadores de comparação (condicionais)
+## Tipo de operadores:
+-Igual (==) -> Verifica se os valores comparados são iguais.
+-Idêntico (===) -> Verifica se os valores comparados são iguais e do mesmo tipo.
+-Diferente (!=) -> Verifica se os valores comparados são diferentes.
+-Diferente (<>) -> Verifica se os valores comparados são diferentes.
+-Não identico (!==) -> Verifica se os valores comparados são diferentes e de tipos diferentes.
+-Menor (<) -> Verifica se o valor da esquerda é menor que o valor da direita.
+-Maior (>) -> Verifica se o valor da esquerda é maior que o valor da direita.
+-Menor igual (<=) -> Verifica se o valor da esquerda é menor ou igual ao valor da direita.
+-Maior igual (>=) -> Verifica se o valor da esquerda é maior ou igual ao valor da direita.

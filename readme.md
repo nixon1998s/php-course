@@ -8,7 +8,7 @@
 - /* cometário de de multiplas linhas */
 - [OBS]: Os comentários do PHP não aparecem ao clicar para inspecionar a página HTML, é possível vizualizar somente em seu código fonte.
 
-# -Aula 303. Variáveis
+# -Aula 303. e 304. Variáveis
 ## Tipos de variáveis:
 
 ### String - Armazenam textos.
@@ -18,4 +18,5 @@
 ### Array - Armazenam outras variáveis.
 -[OBS01]: Apesar do PHP ter tipos de variáveis não é necessário declarar o tipo (string, float, ...) ao criar uma variável no código.
 -[OBS02]: Para declarar uma variável deve-se utilizar o caracter $ (exemplo: $nome).
+-[OBS03]: O valor true é 1 e o valor false é vazio (nada é retornado).
 

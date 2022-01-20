@@ -19,15 +19,16 @@
 -[OBS02]: Para declarar uma variável deve-se utilizar o caracter $ (exemplo: $nome).
 -[OBS03]: O valor true é 1 e o valor false é vazio (nada é retornado).
 
-# -Aula 307 - Concateção.
+# -Aula 307. - Concateção.
 - Para fazer uma concatenação no PHP deve-se utilizar o '.', (exemplo .$nome).
 -[OBS01]: É possível também fazer a concateção utilizando aspas duplas, por exemplo ("Olá $nome, como vai?").
 
-# -Aula 308 - Variáveis constantes
+# -Aula 308. - Variáveis constantes
 - Antes de criar uma variável constante em PHP é necessário chamar a função define(), a função irá definir a variável para constante e espera que passe 2 valores, sendo o primeiro valor o nome da variável e em segundo o seu valor, exemplo(define('nome','Nixon')).
--[OBS01]: Para declarar uma variável constante se adota a pratica de escrever o nome das variáveis em maiúsculos, exemplo(define('COR', 'Azul')).[OBS02]: Ao chamar a variável criada não é necessário utilizar o $, (exemplo: echo COR;)
+-[OBS01]: Para declarar uma variável constante se adota a pratica de escrever o nome das variáveis em maiúsculos, exemplo(define('COR', 'Azul')).
+-[OBS02]: Ao chamar a variável criada não é necessário utilizar o $, (exemplo: echo COR;)
 
-# -Aula 310 - Operadores de comparação (condicionais)
+# -Aula 310. - Operadores de comparação (condicionais)
 ## Tipo de operadores:
 -Igual (==) -> Verifica se os valores comparados são iguais.
 -Idêntico (===) -> Verifica se os valores comparados são iguais e do mesmo tipo.
@@ -38,3 +39,19 @@
 -Maior (>) -> Verifica se o valor da esquerda é maior que o valor da direita.
 -Menor igual (<=) -> Verifica se o valor da esquerda é menor ou igual ao valor da direita.
 -Maior igual (>=) -> Verifica se o valor da esquerda é maior ou igual ao valor da direita.
+
+# -Aula 312. - Operadores lógicos
+## Tipo de operadores:
+-Operador E (AND ou &&) -> Verdadeiro se todas as expressões forem verdadeiras.
+-Operador OU (OR ou ||) -> Verdadeira se pelo menos uma das expressões forem verdadeiras.
+-Operador XOR (XOR) -> Verdadeiro apenas se uma das expressões for verdadeira, mas não ambas, ou seja, uma expressões deve ser verdadeira e a outra deve ser falsa.
+-Operador Negação (!) -> Inverte o resultado da expressão.
+
+# -Aula 316. - Operador ternário
+-O operador ternário pode ser usado quando o retorno é apenas uma única instrução.
+-Para criar um operador ternário é necessário colocar a condição e a lógica caso o resultado seja verdadeiro ou falso.
+
+Exemplo:
+<condicao> ? 'verdadeiro' : 'false' 
+-[OBS01] - O "?" serve para seperar a condição da lógica.
+-[OBS02] - O ":" serve para seperar as posibilidades (verdadeiro ou falso).

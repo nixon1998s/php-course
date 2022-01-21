@@ -8,7 +8,7 @@
 - /* cometário de de multiplas linhas */
 - [OBS]: Os comentários do PHP não aparecem ao clicar para inspecionar a página HTML, é possível vizualizar somente em seu código fonte.
 
-# -Aula 303. até 304. Variáveis
+# -Aula 303. até 306. Variáveis
 ## Tipos de variáveis:
 ### String - Armazenam textos.
 ### Int - Armazenam números inteiros.
@@ -23,7 +23,7 @@
 - Para fazer uma concatenação no PHP deve-se utilizar o '.', (exemplo .$nome).
 -[OBS01]: É possível também fazer a concateção utilizando aspas duplas, por exemplo ("Olá $nome, como vai?").
 
-# -Aula 308. - Variáveis constantes
+# -Aula 308. e 309. - Variáveis constantes
 - Antes de criar uma variável constante em PHP é necessário chamar a função define(), a função irá definir a variável para constante e espera que passe 2 valores, sendo o primeiro valor o nome da variável e em segundo o seu valor, exemplo(define('nome','Nixon')).
 -[OBS01]: Para declarar uma variável constante se adota a pratica de escrever o nome das variáveis em maiúsculos, exemplo(define('COR', 'Azul')).
 -[OBS02]: Ao chamar a variável criada não é necessário utilizar o $, (exemplo: echo COR;)
@@ -40,14 +40,14 @@
 -Menor igual (<=) -> Verifica se o valor da esquerda é menor ou igual ao valor da direita.
 -Maior igual (>=) -> Verifica se o valor da esquerda é maior ou igual ao valor da direita.
 
-# -Aula 312. - Operadores lógicos
+# -Aula 312. até 315. - Operadores lógicos
 ## Tipo de operadores:
 -Operador E (AND ou &&) -> Verdadeiro se todas as expressões forem verdadeiras.
 -Operador OU (OR ou ||) -> Verdadeira se pelo menos uma das expressões forem verdadeiras.
 -Operador XOR (XOR) -> Verdadeiro apenas se uma das expressões for verdadeira, mas não ambas, ou seja, uma expressões deve ser verdadeira e a outra deve ser falsa.
 -Operador Negação (!) -> Inverte o resultado da expressão.
 
-# -Aula 316. - Operador ternário
+# -Aula 316. e 317. - Operador ternário
 -O operador ternário pode ser usado quando o retorno é apenas uma única instrução.
 -Para criar um operador ternário é necessário colocar a condição e a lógica caso o resultado seja verdadeiro ou falso.
 
@@ -55,3 +55,32 @@ Exemplo:
 <condicao> ? 'verdadeiro' : 'false' 
 -[OBS01] - O "?" serve para seperar a condição da lógica.
 -[OBS02] - O ":" serve para seperar as posibilidades (verdadeiro ou falso).
+
+# -Aula 318. e 319. - Switch
+-O Switch serve para fazer comparação de identicos.
+-[OBS01] - Default é a mesma coisa que o else.
+-[OBS02] - True possui o valor 1, deve-se lembrar disse ao declarar o valor 1 para comparação no switch.
+
+# -Aula 320. até 322. - Casting de tipos (Conversão do tipo de uma variável para outro tipo)
+## Conversões:
+-Int -> Pode ser convertido para Float e String.
+-Float -> Pode ser convertido para Int e String.
+-String -> Pode ser convertido para Int, Float e Boolean.
+-Boolean -> Pode ser convertido para Int e String.
+[OBS01] - A função gettype(variável) espera uma variável dentro para a função conseguir verificar o seu tipo.
+
+# -Aula 323. - Operações aritméticas na atribuição de valores
+[OBS01] - forma convencional é:
+    $x = 10;
+    $x = $x + 5;
+
+        - forma enxuta:
+    $x = 10;
+    $x += 5;
+
+# -Aula 324. - Operadores de incremento/decremento
+## Operadores:
+-Pré-incremento (++$a) - Adiciona uma unidade antes de retornar $a.
+-Pós-incremento ($a++) - Retonar $a e depois adiciona uma unidade.
+-Pré-decremento (--$a) - Subtrai uma unidade antes de retornar $a.
+-Pós-decremento ($a--) - Retorna $a e depois subtrai uma unidade.

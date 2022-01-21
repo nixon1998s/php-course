@@ -113,3 +113,11 @@ Exemplo:
     echo calcularAreaTerreno(30,50);
 [OBS04] - O retorno dessa função será a variável $area;
 [OBS05] - Como a função espera que passemos 2 entradas de dados, ao chamar a função nós inserimos 2 valores esperados (30 para largura,50 para comprimento).
+
+# -Aula 329. - Funções nativas para manipular strings
+- strtolower($texto) -> Transforma todos os caracteres da string em minúsculo.
+- strtoupper($texto) -> Transforma todos os caracteres da string em maiúsculo.
+- ucfirst($texto) -> Transforma o primeiro caracter da string em maiúsculo.
+- strlen($texto) -> Conta a quantidade de caracteres de uma string.
+- str_replace(<procura por>, <substitui por>, $texto) -> Substitui uma cadeia de caracteres por outra dentro de uma string.
+- substr($texto, <posicao inicial>, <qtde caracteres>) -> Retorna parte de uma string.

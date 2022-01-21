@@ -84,3 +84,32 @@ Exemplo:
 -Pós-incremento ($a++) - Retonar $a e depois adiciona uma unidade.
 -Pré-decremento (--$a) - Subtrai uma unidade antes de retornar $a.
 -Pós-decremento ($a--) - Retorna $a e depois subtrai uma unidade.
+
+# -Aula 326. - Introdução a funções
+[OBS01] - Toda função deve começar com um verbo e ter letra maiúsculos nos substantivos.
+[OBS02] - As funções podem ou não ter entrada de dados (variáveis), exemplo:
+    function exibirBoasVindas() {
+        echo "Bem-vindo ao curso de PHP.";
+    }
+
+    function calcularAreaTerreno($largura, $comprimento) {
+        $area = $largura*$comprimneto;
+        return $area;
+    }
+[OBS03] - Existem 2 tipos de funções, as funções VOID e as funções que retornam algo.
+-As funções VOID não retornam nenhum valor quando é chamada a função para ser executada, exemplo:
+    function exibirBoasVindas() {
+        echo "Bem-vindo ao curso de PHP.";
+    }
+
+    exibirBoasVindas();
+
+-As funções com retorno sempre terão "return" ao final da lógica, exemplo:
+    function calcularAreaTerreno($largura, $comprimento) {
+        $area = $largura*$comprimento;
+        return $area;
+    }
+
+    echo calcularAreaTerreno(30,50);
+[OBS04] - O retorno dessa função será a variável $area;
+[OBS05] - Como a função espera que passemos 2 entradas de dados, ao chamar a função nós inserimos 2 valores esperados (30 para largura,50 para comprimento).

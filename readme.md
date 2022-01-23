@@ -121,3 +121,17 @@ Exemplo:
 - strlen($texto) -> Conta a quantidade de caracteres de uma string.
 - str_replace(<procura por>, <substitui por>, $texto) -> Substitui uma cadeia de caracteres por outra dentro de uma string.
 - substr($texto, <posicao inicial>, <qtde caracteres>) -> Retorna parte de uma string.
+
+# -Aula 330. - Funções nativas para tarefas matemáticas
+- ceil($numero) -> Arredonda o valor para cima.
+- floor($numero) -> Arredonda o valor para baixo.
+- round($numero)-> Arredonda o valor com base nas casas decimas.
+- rand() -> Gera um inteiro aleatório.
+- sqrt() -> Retorna a raiz quadrada.
+
+# -Aula 331. - Funções nativas para manipular datas
+-Para saber mais sobre as formatações, entre no site: https://www.php.net/manual/en/function.date
+- date(formato) ->Recupera a data atual, exemplo date('d/m/y H:i') irá mostrar 23/01/2022 17:35.
+- date_default_timezone_get(timezone) -> Recupera o timezone default da aplicação (configura o GTM).
+- date_default_timezone_set(timezone) -> Atualiza o timezone default da aplicação.
+- strtotime(data) -> Transforma datas textuais em segundos.

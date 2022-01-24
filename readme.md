@@ -135,3 +135,15 @@ Exemplo:
 - date_default_timezone_get(timezone) -> Recupera o timezone default da aplicação (configura o GTM).
 - date_default_timezone_set(timezone) -> Atualiza o timezone default da aplicação.
 - strtotime(data) -> Transforma datas textuais em segundos.
+
+# -Aula 332. - Array básico e Multidimensionais
+-Possui 2 tipos de array no PHP, os arrays sequênciais e os numéricos, exemplo:
+-Numéricos:
+    $lista_frutas = ['banana', 'Maça', 'Uva'];
+A variavel banana terá seu indice com o valor 0, maça com o valor 1 e uva com o valor 2.
+
+-Sequênciais:
+    $lista_frutas = ['a' => 'banana', 'b' => 'Maça', '3' => 'Uva'];
+No Array sequêncial você define qual vai ser o valor do indice, sendo o 'a' para banana, 'b' para maça e '3' para uva.
+
+-[OBS01]: Existem 2 funções para verificar os dados inseridos no array, sendo elas o var_dump($lista_frutas) e o print_r($lista frutas). O var_dump mostra o tipo da variável que foi inserida no array e quantidade de variáveis dentro desse array. Já o print_r mostra somente as variáveis inseridas dentro desse array.

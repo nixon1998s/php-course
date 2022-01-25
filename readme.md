@@ -147,3 +147,36 @@ A variavel banana terá seu indice com o valor 0, maça com o valor 1 e uva com 
 No Array sequêncial você define qual vai ser o valor do indice, sendo o 'a' para banana, 'b' para maça e '3' para uva.
 
 -[OBS01]: Existem 2 funções para verificar os dados inseridos no array, sendo elas o var_dump($lista_frutas) e o print_r($lista frutas). O var_dump mostra o tipo da variável que foi inserida no array e quantidade de variáveis dentro desse array. Já o print_r mostra somente as variáveis inseridas dentro desse array.
+
+# -Aula 333. - Array de pesquisa
+-Existem 2 funções para fazer pesquisas dentro de arrays, sendo a in_array('Maçã', $lista_frutas) que retorna true ou false dependendo a variável que quer pesquisar dentro do array e array_search('Maça', $lista_frutas) que informa o índice da variável que estamos pesquisando.
+[OBS01] - Na função array_serach() a valor false é informado como Null, ao contrário da função in_array() que retorna vazio quando o valor é false.
+
+# -Aula 337. - Funções nativas para manipular arrays
+- is_array(array) -> Verifica se o parâmetro é um array.
+- array_keys(array) -> Retorna todas as chaves de um array.
+- sort(array) -> Ordena um array e reajusta seus índices.
+- asort(array) -> Ordena um array preservando os índices.
+- count(array) -> Conta a quantidade de elementos de um array.
+- array_merge(array) -> Funde um ou mais arrays.
+- explode(array) -> Divide uma string baseada em um delimitador.
+- implode(array) -> Junta elementos de um array em uma string.
+
+# -Aula 339. - Loops
+## Comando While(enquanto)
+-[OBS01] - O comando break interrompe toda a estrutura de repetição e o continue apenas pula uma interação e vai para interação seguinte, descartando o que estiver a seguir da instrução continue.
+
+## Do While
+-A condição é validada somente no final da executação, ou seja, sempre irá executar o comando antes de verificar se a condição é valida ou não, segue exemplo:
+
+ $x = 10;
+ 
+ do {
+     echo 'Entrou no While';
+ } while($x <10>);
+
+## For
+-sintaxe:
+ for(variavel; condição; incremento) {
+
+ }

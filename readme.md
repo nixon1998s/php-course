@@ -154,7 +154,7 @@ No Array sequêncial você define qual vai ser o valor do indice, sendo o 'a' pa
 
 # -Aula 337. - Funções nativas para manipular arrays
 - is_array(array) -> Verifica se o parâmetro é um array.
-- in_array(array) -> verifica se um elemento existe no array ou não
+- in_array(array) -> verifica se um elemento existe no array ou não.
 - array_keys(array) -> Retorna todas as chaves de um array.
 - sort(array) -> Ordena um array e reajusta seus índices.
 - asort(array) -> Ordena um array preservando os índices.

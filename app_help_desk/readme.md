@@ -29,3 +29,27 @@ Exemplo:
 - Qual a função de uma sessão em PHP?
 Sessões são uma forma simples de armazenar dados para usuários individuais usando um ID de sessão único.
 [OBS01] - session_start() cria uma sessão.
+
+## Aula 352. - Incorporando scripts com include, include_once, require e require_once
+- Os includes conseguem incluir códigos de um arquivo para outro, são como construtores.
+Exemplo:
+    include('menu.php');
+    include 'menu.php';
+
+include - gera um Warning mas executa o resto do código.
+requere - gera um Fatal Error e não executa o resto do código.
+include_once - é executado apenas uma vez e gera um Warning mas executa o resto do código.
+requere_once - é executado apenas uma vez e gera um Fatal Error e não executa o resto do código.
+
+## Aula 353 - Encerrando a sessão (Logoff)
+- É possível encerrar uma sessão de 2 modos, sendo por unset($_SESSION['x']) ou session_destroy(), a diferença é que a função unset encerra somente u(ma sessão específica, por isso é necessário passar o nome do array e o índice que deve ser encerrado. Já a função session_destroy() encerra toda a sessão.
+
+## Aula 356 - Registrando chamados
+- Para criar um arquivo de escrita você pode utilizar a função fopen('nome_do_arquivo.extensão','tipografia'), a função espera que informa o nome do arquivo, extensão e a tipografia. Para saber mais sobre tipografia acesse o site: https://www.php.net/manual/pt_BR/function.fopen.php
+[OBS01] - Para escrever o arquivo você deverá utilizar a função fwrite($variaval_que_recebe_o_arquivo, $texto), a função espera que passe a varível que recebe o arquivo e também o texto.
+[OBS02] - Para fechar o arquivo você deve utilizar a função fclose($variaval_que_recebe_o_arquivo), a função espera que informe qual arquivo irá ser fechado.
+[OBS03] - PHP_EOL é uma constante para utilizar para gerar uma quebra de linha nos arquivos de escrita.
+
+## Aula 357 - Consultando chamados
+[OBS01] - São feof () função verifica ter atingido o fim do arquivo (EOF). Se ocorrer um erro, ou o ponteiro do arquivo para o final do arquivo (EOF) retorna TRUE, caso contrário, retorna FALSE.
+[OBS02] - A função fgets () retorna uma linha de um arquivo aberto, quando ela chega ao fim de um determinado período ou ler o arquivo (EOF) (o que ocorrer primeiro), Parar para retornar para uma nova linha. Se falhar a função retorna FALSE.

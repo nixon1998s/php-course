@@ -20,7 +20,9 @@
     if($usuario_autenticacao) {
         echo 'Usuário autenticado';
         $_SESSION['autenticado'] = 'SIM';
-
+        $_SESSION['x'] = 'um valor';
+        $_SESSION['y'] = 'outro valor';
+        header('location: home.php');
     } else {
         header('location: index.php?login=erro');
         $_SESSION['autenticado'] = 'NÃO';
